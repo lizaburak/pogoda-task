@@ -26,11 +26,11 @@ SwaggerExpress.create(config, function (err, swaggerExpress) {
       : "0" + dateRightNow.getDate()
     }`;
 
-  if (swaggerExpress.runner.swagger.paths["/map"]) {
+  if (swaggerExpress.runner.swagger.paths["/events"]) {
     console.log(
       "try this:\ncurl http://127.0.0.1:" +
       port +
-      `/api/v1/map?date=${fullDateText}`
+      `/api/v1/events?date=${fullDateText}`
     );
   }
 });
